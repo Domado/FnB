@@ -6,16 +6,16 @@
  **/
  include('main.php');
 ?>
+    <style>
+    .border-comm{
+        border-radius:12px;
+    }
+    </style>
     <!--Post-->
     <form action="save.php" method="post" accept-charset="utf-8">
     <br/>
     <div class="mdui-container">
-        <div class="mdui-card">
-        <script src="https://raw.github.com/leizongmin/js-xss/master/dist/xss.js"></script>
-        <script>
-        var html = filterXSS('<script>alert("xss");</scr' + 'ipt>');
-        alert(html);
-        </script>
+        <div class="mdui-card border-comm">
             <div class="mdui-row">
             <div class="mdui-container">
                 <div class="mdui-row">
