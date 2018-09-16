@@ -1,7 +1,7 @@
 <?php
 /**
  * (C)2015-2099 FnTie All rights reserved.
- * FnMB version:1.0.3
+ * FnMB version:1.0.4
  * Author: HanFen
  **/
 include("FnKu/include/input.php");
@@ -26,6 +26,6 @@ $input = new input();
     }
 
 $time = time();
-$sql = "INSERT INTO FnMB_Msg (Message,User,QQ,Intime) values ('{$Message}','{$User}','{$QQ}','{$time}')";
+$sql = "INSERT INTO FnB_Msg (Message,User,QQ,Intime) values ('{$Message}','{$User}','{$QQ}','{$time}')";
 $is = $Fn_DBConn->query($sql);
 header("location:index.php");
