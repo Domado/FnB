@@ -6,6 +6,7 @@
         <title>萌萌哒留言板</title>
         <link rel="stylesheet" href="template/static/css/mdui.min.css">
         <script src="template/static/js/mdui.min.js"></script>
+        <script src="https://unpkg.com/ionicons@4.4.2/dist/ionicons.js"></script>
     </head>
     <body class="mdui-drawer-body-left mdui-appbar-with-toolbar  mdui-theme-primary-indigo mdui-theme-accent-pink">
    <!--工具栏-->
@@ -67,7 +68,14 @@
             <div class="mdui-dialog-title">关于 FnB </div>
             <div class="mdui-dialog-content">
             <blockquote>
-				<p>FnB 1.0.4 (Bate 1)</p>
+				<p>FnB 1.0.4 (Bate 2)
+				<br/>
+				<a href="https://github.com/FnTieStudio/FnB" class="mdui-fab mdui-fab-mini"><i class="mdui-icon material-icons">&#xe8ab;</i></a>
+				<a href="javascript:alert('已清理');;" class="mdui-fab mdui-fab-mini mdui-ripple"><i class="mdui-icon material-icons">&#xe028;</i></a>
+				</p> 
+				        
+				<p>开发者: HanFen </p>
+				<p>协助者: 学神之女</p>
 				<footer>© Copyright 2018 by FnTie All rights are reserved.</footer>
 			</blockquote>
             </div>
