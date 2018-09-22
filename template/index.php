@@ -40,7 +40,7 @@
                     <div class="mdui-row mdui-row-gapless">
                       <div class="mdui-col-xs-5"></div>
                       <div class="mdui-col-xs-2">
-                          <input type="submit" class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent" value=" 发 射 ! " />
+                                      <input type="submit" class="mdui-btn mdui-btn-raised mdui-ripple mdui-color-theme-accent" id="Post" value=" 发 射 ! " />
                       </div>
                       <div class="mdui-col-xs-5"></div>
                     </div>
@@ -49,6 +49,50 @@
         
             <br/>
         </div>
+    <script>
+        mdui.JQ('#Post').on('click', function () {
+          mdui.snackbar({
+            message: '赶往发射场中...'
+          });
+        });
+    </script>
+    <!--Erro Mgs 
+        <script>
+    $('#Post').click(function(){
+        $.ajax({
+          url: 'save.php',
+          type: 'POST',
+          data: "a=2,
+          success: function(){
+              window.location.reload();
+              alert(data);
+//            var data = data;
+//            alert(data);
+          }
+          error: function(){
+              var data = data;
+              alert(data);
+          }
+        })
+    });
+
+    <script>
+function func(){
+    $.ajax({
+        method:'POST',
+        url:'save.php',
+        data:{
+        },
+        success:function(){
+            window.location.reload();
+        },
+        error:function(xhr.responseText){
+            mdui.snackbar(xhr.responseText);
+        }
+    });
+}
+//$("form").attr('onsubmit','func();return false;')
+    </script>-->
         <br/>
         <br/>
         
