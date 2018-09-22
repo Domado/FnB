@@ -9,9 +9,14 @@ class input
 {
     public function post( $Message )
     {
-        if ( $Message == '' ) {
+        if( !isset ($Message) ) {
             return false;
         }
+        
+        #if ( $Message == !isset($Message) ) {
+        #            return false;
+        #        }
+        
         foreach ( $GLOBALS['SC'] as $SCV ) {
             if( $Message == $SCV ){
                 return false;
@@ -20,3 +25,4 @@ class input
             return true;
     }
 }
+
