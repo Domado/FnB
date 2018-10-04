@@ -11,6 +11,11 @@
         border-radius:12px;
     }
     </style>
+    <style>
+    .border-comm-1{
+        border-radius:10px;
+    }
+    </style>
     <!--Post-->
     <form action="save.php" method="post" accept-charset="utf-8">
     <br/>
@@ -75,7 +80,6 @@
           }
         })
     });
-
     <script>
 function func(){
     $.ajax({
@@ -99,7 +103,7 @@ function func(){
         <?php
         foreach ( $rows as $row ) {
         ?>
-        <div class="mdui-card mdui-hoverable">
+        <div class="mdui-card mdui-hoverable border-comm-1">
               <div class="mdui-card-header">
                 <img class="mdui-card-header-avatar" src="https://avatar.dawnlab.me/qq/<?php echo htmlspecialchars($row['QQ']);?>?s=100"/>
                 <div class="mdui-card-header-title"><?php echo htmlspecialchars($row['User']);?></div>
